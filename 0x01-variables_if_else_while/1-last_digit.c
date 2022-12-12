@@ -1,30 +1,16 @@
+/*
+ * File: 1-last_digit.c
+ * Auth: Emmanuel Ejeagha 
+ */
+
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
 
 /**
- * Main - print random numbers
- *
- * Return: 0 Always (Success)
-*/
-
-int main(void)
-{
-	int n;
-
-	srand(time(0))n
-	n = rand() - RAND_MAX / 2;
-
-	#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
-
-/**
- * main - Prints a random number and states whether
- *        it is positive, negative, or zero.
- *
+ * main - Prints the last digit of a venerated randomly
  * Return: Always 0.
-*/
+ */
 int main(void)
 {
 	int n;
@@ -32,12 +18,22 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	if (n > 0)
-		printf("%d is positive\n", n);
-	else if (n < 0)
-		printf("%d is negative\n", n);
+	if ((n % 10) > 5)
+	{
+		printf("Last digit of %d is %d and is greater than 5\n",
+			n, n % 10);
+	}
+	else if ((n % 10) < 6 && (n % 10) != 0)
+	{
+		printf("Last digit of %d is %d and is less than 6 and not 0\n",
+			n, n % 10);
+	}
 	else
-		printf("%d is zero\n", n);
+	{
+		printf("Last digit of %d is %d and is 0\n",
+			n, n % 10);
+	}
 
 	return (0);
+
 }
