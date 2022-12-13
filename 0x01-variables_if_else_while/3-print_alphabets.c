@@ -7,13 +7,13 @@
 
 int main(void)
 {
-	char alphABET;
+	char letter;
 
-	for (alphABET = 'a'; alphABET <= 'z'; alphABET++)
+	for (letter = 'a'; letter <= 'z'; letter++)
 
-	for (alphABET = 'A'; alphABET <= 'Z'; alphABET++)
+	for (letter = 'A'; letter <= 'Z'; letter++)
 
-		putchar(alphABET);
+		putchar(letter);
 
 	putchar('\n');
 
