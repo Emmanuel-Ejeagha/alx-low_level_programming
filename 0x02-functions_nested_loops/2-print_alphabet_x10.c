@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 /**
  * print_alphabet_x10 - a function that prints alphabet ten times
  *
@@ -16,5 +16,4 @@ void print_alphabet_x10(void)
 		}
 	_putchar('\n');
 	}
-	
 }
