@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * _islower - checks for lowercase character
@@ -7,5 +7,12 @@ include "main.h"
  */
 int _islower(int c)
 {
-	return (c >= 'a' && c <= 'z');
+	if (c >= 'a' && c <= 'z')
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
