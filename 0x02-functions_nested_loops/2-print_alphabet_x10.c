@@ -4,19 +4,15 @@
  *
  * Return: x10 a-z
 */
-void
-print_alphabet_x10(void)
+void print_alphabet_x10(void)
 {
-	char alpha, ab;
-	ab = 0;
+	char letter;
+	int count = 0;
 
-	while (ab < 10)
+	while (count++ <= 9)
 	{
-		for (alpha = 'a'; alpha <= 'z'; alpha++)
-		{
-			_putchar (alpha);
-		}
-		ab++;
-		_putchar('\n');
+		for (letter = 'a'; letter <= 'z'; letter++)
+			_putchar(letter);
+	_putchar('n,);
 	}
 }
