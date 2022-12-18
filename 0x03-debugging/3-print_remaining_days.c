@@ -35,6 +35,3 @@ void print_remaining_days(int month, int day, int year)
 		}
 	}
 }
-Footer
-© 2022 GitHub, Inc.
-Footer
