@@ -8,15 +8,15 @@ void
 print_alphabet_x10(void)
 {
 	char alpha, ab;
-	ab = 0;
+	co = 0;
 
-	while (ab < 10)
+	while (co < 10)
 	{
 		for (alpha = 'a'; alpha <= 'z'; alpha++)
 		{
 			_putchar (alpha);
 		}
-		ab++;
+		co++;
 		_putchar('\n');
 	}
 }
