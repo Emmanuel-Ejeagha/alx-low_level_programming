@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * void reset_to_98(int *n);
+ * reset_to_98 - fuction that takes a pointer to a parameter
  * @n: point to a memory address
  *
  * Return: Always 0
