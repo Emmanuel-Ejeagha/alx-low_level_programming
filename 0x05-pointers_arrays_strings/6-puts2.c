@@ -3,6 +3,7 @@
  * puts2 - fuction that prints every other char of a string
  * @str: char to check
  *
+ * Description: prints every other char of a string
  * Return: Always 0
  */
 void puts2char(char *str)
@@ -18,7 +19,7 @@ void puts2char(char *str)
 		}
 		if (count % 2 == 0)
 			_putchar(str[count]);
-		count++
+		count++;
 	}
 
 }
