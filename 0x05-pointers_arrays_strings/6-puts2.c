@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * puts2 - fuction that prints every other char of a string
+ * puts2char - fuction that prints every other char of a string
  * @str: char to check
  *
  * Description: prints every other char of a string
@@ -9,17 +9,22 @@
 void puts2char(char *str)
 {
 	int count = 0;
+	int m = 0;
+	char *p = str;
+	int n;
 
-	while (count >= 0)
+	while (*p != '\0')
 	{
-		if (str[count] == '\0')
-		{
-			_putchar('\n');
-			break;
-		}
-		if (count % 2 == 0)
-			_putchar(str[count]);
+		p++;
 		count++;
 	}
-
+	m = count - 1;
+	for (n = 0; n <= m; n++)
+	{
+		if (n % 2 == 0)
+		{
+			_putchar(str[n]);
+		}
+	}
+	_putchar('\n');
 }
