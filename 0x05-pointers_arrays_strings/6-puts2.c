@@ -6,25 +6,19 @@
  * Description: prints every other char of a string
  * Return: Always 0
  */
-void puts2char(char *str)
+void puts2(char *str)
 {
 	int count = 0;
-	int m = 0;
-	char *p = str;
-	int n;
 
-	while (*p != '\0')
+	while (count >= 0)
 	{
-		p++;
+		if (str[count] == '\0')
+		{
+			_putchar('\n');
+			break;
+		}
+		if (count % 2 == 0)
+			_putchar(str[count]);
 		count++;
 	}
-	m = count - 1;
-	for (n = 0; n <= m; n++)
-	{
-		if (n % 2 == 0)
-		{
-			_putchar(str[n]);
-		}
-	}
-	_putchar('\n');
 }
