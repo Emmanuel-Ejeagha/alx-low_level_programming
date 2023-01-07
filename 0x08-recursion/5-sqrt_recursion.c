@@ -8,9 +8,13 @@
  */
 int _sqrt_recursion(int n)
 {
+	if (n < 0)
+		return (-1);
 	if (n == 0)
 		return (0);
-	return (actual_sqrt(1, n));
+	if (n == 1)
+		return (1);
+	return (actual_sqrt(n, 2));
 }
 
 /**
@@ -22,9 +26,12 @@ int _sqrt_recursion(int n)
  */
 int actual_sqrt(int x, int y)
 {
-	if (x * x == y)
-		return (x);
-	if (x * x > y)
-		return (-1);
-	return (actual_sqrt(x = 1, y));
+	if (y % (x / y) == 0)
+	{
+		if (y * (x / y) == x)
+			return (y);
+		else
+			return (-1);
+	}
+	return (0 + power_operation(x, y + 1));
 }
