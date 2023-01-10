@@ -21,5 +21,8 @@ char *_strchr(char *s, char c);
 unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 31f03c20602e8fb89112d847a7af2ac8762ce670
 #endif
