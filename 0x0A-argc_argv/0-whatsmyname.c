@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * int main - program that prints its name followed by a newline
+ * main - program that prints its name followed by a newline
  * @argc: argument count
  * @argv: argument vector
  *
