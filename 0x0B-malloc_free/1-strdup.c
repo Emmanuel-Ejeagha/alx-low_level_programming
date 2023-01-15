@@ -27,11 +27,11 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	for (i = 0; i <= j; i++)
+	for (i = 0; i < j; i++)
 	{
 		duplicate[i] = str[i];
 	}
-	copy[j] = '\0';
+	duplicate[j] = '\0';
 
 	return (duplicate);
 }
