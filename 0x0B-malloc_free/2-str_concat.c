@@ -8,7 +8,7 @@
  *
  * Return: the pointer of an array of chars
  */
-char *str_concat(char *s1, char s2)
+char *str_concat(char *s1, char *s2)
 {
 	char *result;
 	unsigned int x, y, z, len;
@@ -16,7 +16,7 @@ char *str_concat(char *s1, char s2)
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
-		s2 == "";
+		s2 = "";
 
 	for (x = 0; s1[x] != '\0'; x++)
 		;
@@ -36,7 +36,7 @@ char *str_concat(char *s1, char s2)
 		result[z] = s1[z];
 
 	len = y;
-	for (y = 0; y <= len; z++; y++)
+	for (y = 0; y <= len; y++)
 		result[z] = s2[y];
 
 	return (result);
